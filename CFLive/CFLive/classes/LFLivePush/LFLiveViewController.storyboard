@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CHd-Zk-oDU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Live View Controller-->
+        <scene sceneID="JRm-Ha-RTS">
+            <objects>
+                <viewController id="CHd-Zk-oDU" customClass="LFLiveViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rq5-D7-BOU"/>
+                        <viewControllerLayoutGuide type="bottom" id="FR2-aV-q86"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pa0-G2-Uks">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2d-Yz-6W6">
+                                <rect key="frame" x="20" y="20" width="100" height="32"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.15367353723404256" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ZUQ-L9-8cP"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="美颜已开启"/>
+                                <state key="selected" title="美颜已关闭"/>
+                                <connections>
+                                    <action selector="beautiful:" destination="CHd-Zk-oDU" eventType="touchUpInside" id="c7y-WL-Wbk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psl-dI-iu1" userLabel="close">
+                                <rect key="frame" x="315" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZqV-r2-oYx"/>
+                                    <constraint firstAttribute="width" constant="40" id="bcm-xO-1dt"/>
+                                </constraints>
+                                <state key="normal" image="talk_close"/>
+                                <connections>
+                                    <action selector="close" destination="CHd-Zk-oDU" eventType="touchUpInside" id="CMf-1z-3Lb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcq-sx-xF0" userLabel="change">
+                                <rect key="frame" x="255" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hAt-Ub-OcA"/>
+                                    <constraint firstAttribute="width" constant="40" id="wUX-bk-DG8"/>
+                                </constraints>
+                                <state key="normal" image="camera_change"/>
+                                <connections>
+                                    <action selector="switchCamare:" destination="CHd-Zk-oDU" eventType="touchUpInside" id="tg9-br-BdU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7T-qI-jff">
+                                <rect key="frame" x="40" y="597" width="295" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qQ4-NS-zGC"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="开始直播">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" title="结束直播">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="living:" destination="CHd-Zk-oDU" eventType="touchUpInside" id="BDG-zd-5pN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状态: 未知" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rB-ON-vBE">
+                                <rect key="frame" x="0.0" y="90" width="375" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.15367353719999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9La-3i-lSp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfq-Fx-LVM">
+                                <rect key="frame" x="140" y="20" width="100" height="32"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.15367353719999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Pq2-sQ-vPO"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="美颜程度"/>
+                                <state key="selected" title="美颜程度"/>
+                                <connections>
+                                    <action selector="beautifulLevel:" destination="CHd-Zk-oDU" eventType="touchUpInside" id="Tba-yT-Vln"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0rB-ON-vBE" firstAttribute="top" secondItem="Rq5-D7-BOU" secondAttribute="bottom" constant="70" id="1RQ-lY-LSo"/>
+                            <constraint firstItem="psl-dI-iu1" firstAttribute="leading" secondItem="zcq-sx-xF0" secondAttribute="trailing" constant="20" id="1vY-qi-22r"/>
+                            <constraint firstAttribute="trailing" secondItem="psl-dI-iu1" secondAttribute="trailing" constant="20" id="7y5-Wa-yXH"/>
+                            <constraint firstItem="d2d-Yz-6W6" firstAttribute="leading" secondItem="Pa0-G2-Uks" secondAttribute="leading" constant="20" id="HUj-Vf-OID"/>
+                            <constraint firstAttribute="bottom" secondItem="A7T-qI-jff" secondAttribute="bottom" constant="40" id="HfU-sJ-qfs"/>
+                            <constraint firstItem="psl-dI-iu1" firstAttribute="top" secondItem="Pa0-G2-Uks" secondAttribute="top" constant="20" id="Kba-Eu-Tl6"/>
+                            <constraint firstItem="zcq-sx-xF0" firstAttribute="top" secondItem="Pa0-G2-Uks" secondAttribute="top" constant="20" id="Kbh-53-rDE"/>
+                            <constraint firstItem="Nfq-Fx-LVM" firstAttribute="leading" secondItem="d2d-Yz-6W6" secondAttribute="trailing" constant="20" id="Q78-iD-vRZ"/>
+                            <constraint firstAttribute="trailing" secondItem="A7T-qI-jff" secondAttribute="trailing" constant="40" id="Scx-Tb-l08"/>
+                            <constraint firstItem="d2d-Yz-6W6" firstAttribute="top" secondItem="Pa0-G2-Uks" secondAttribute="top" constant="20" id="gxE-qV-8y3"/>
+                            <constraint firstItem="0rB-ON-vBE" firstAttribute="leading" secondItem="Pa0-G2-Uks" secondAttribute="leading" id="ms8-l7-pI4"/>
+                            <constraint firstItem="A7T-qI-jff" firstAttribute="leading" secondItem="Pa0-G2-Uks" secondAttribute="leading" constant="40" id="oAq-X4-ULf"/>
+                            <constraint firstItem="Nfq-Fx-LVM" firstAttribute="top" secondItem="Pa0-G2-Uks" secondAttribute="top" constant="20" id="oek-LP-W4k"/>
+                            <constraint firstAttribute="trailing" secondItem="0rB-ON-vBE" secondAttribute="trailing" id="vSp-xl-755"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="beautifulBtn" destination="d2d-Yz-6W6" id="dZs-k0-kRr"/>
+                        <outlet property="beautifulLevelBtn" destination="Nfq-Fx-LVM" id="2Fg-t4-xjf"/>
+                        <outlet property="livingBtn" destination="A7T-qI-jff" id="6r3-xd-FmH"/>
+                        <outlet property="statusLabel" destination="0rB-ON-vBE" id="VEf-YU-cMn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Nk-Be-tQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320.80000000000001" y="298.2008995502249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera_change" width="40" height="40"/>
+        <image name="talk_close" width="40" height="40"/>
+    </resources>
+</document>

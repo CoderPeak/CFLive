@@ -1,0 +1,16 @@
+//
+//  CFMediaPlayer.pch
+//  CFMediaPlayer
+//
+//  Created by Peak on 17/3/7.
+//  Copyright © 2017年 Peak. All rights reserved.
+//
+
+#ifndef CFMediaPlayer_pch
+#define CFMediaPlayer_pch
+
+#import "CFMacro.h"
+#import "NSTimer+Block.h"
+#import "UIView+CFFrame.h"
+
+#endif /* CFMediaPlayer_pch */
