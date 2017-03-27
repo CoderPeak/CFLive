@@ -976,11 +976,11 @@
 					"$(PROJECT_DIR)/CFLive/frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/chenfeng/Desktop/自己demo/CFLive/CFLive/CFLive.pch";
+				GCC_PREFIX_HEADER = /Users/chenfeng/Desktop/MyProject/CFLive/CFLive/CFLive/CFLive.pch;
 				INFOPLIST_FILE = CFLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CoderPeak.CFLive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoderPeak.CFLive11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -997,11 +997,11 @@
 					"$(PROJECT_DIR)/CFLive/frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/chenfeng/Desktop/自己demo/CFLive/CFLive/CFLive.pch";
+				GCC_PREFIX_HEADER = /Users/chenfeng/Desktop/MyProject/CFLive/CFLive/CFLive/CFLive.pch;
 				INFOPLIST_FILE = CFLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CoderPeak.CFLive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoderPeak.CFLive11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
