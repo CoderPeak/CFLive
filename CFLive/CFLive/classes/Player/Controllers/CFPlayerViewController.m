@@ -1047,7 +1047,7 @@ long _index = 0;
         [self stopRtmp];
         self.txtRtmpUrl.text = mArr[rowIndex];
         
-        UIImage *image = [UIImage imageNamed:@"background@2x.jpg"];
+        UIImage *image = [UIImage imageNamed:@"bgImage"];
         self.view.layer.contents = (id)image.CGImage;
         
         

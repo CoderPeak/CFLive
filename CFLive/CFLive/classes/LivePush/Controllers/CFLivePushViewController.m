@@ -410,7 +410,7 @@ void testHookAudioFunc(unsigned char * pcm_buffer, int len_buffer, int sample_ra
     //主界面排版
     self.wantsFullScreenLayout = YES;
     
-    UIColor* bgColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background@2x.jpg"]];
+    UIColor* bgColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bgImage"]];
     [self.view setBackgroundColor:bgColor];
     
     CGSize size = [[UIScreen mainScreen] bounds].size;
